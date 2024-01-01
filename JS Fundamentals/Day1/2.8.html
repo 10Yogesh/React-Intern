@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Operators</title>
+  </head>
+  <body>
+    <script>
+      //TASK1
+      let a1 = 1,
+        b1 = 1;
+      let c1 = ++a1;
+      let d1 = b1++;
+      alert("a" + a1); //2
+      alert("b" + b1); //2
+      alert("c" + c1); //2
+      alert("d" + d1); //1
+
+      //TASK2
+      let a2 = 2;
+      let x = 1 + (a2 += 2);
+      alert(x); //5
+
+      //TASK3
+      alert("" + 1 + 0); //"10"
+      alert("" - 1 + 0); //-1
+      alert(true + false); //1
+      alert(6 / "3"); //2
+      alert("2" * "3"); //6
+      alert(4 + 5 + "px"); //"9px"
+      alert("$" + 4 + 5); //"$45"
+      alert("4" - 2); //2
+      alert("4px" - 2); //NaN
+      alert("  -9  " + 5); //" -9 5"
+      alert("  -9  " - 5); //-14
+      alert(null + 1); //1
+      alert(undefined + 1); //NaN
+      alert(" \t \n" - 2); //-2
+
+      //TASK4
+      let a = prompt("First number?", 1);
+      let b = prompt("Second number?", 2);
+
+      alert(+a + +b); //3
+    </script>
+  </body>
+</html>

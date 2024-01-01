@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <script>
+      alert(null || 2 || undefined); //2
+      alert(alert(1) || 2 || alert(3)); //2
+      alert(1 && null && 2); //null
+      alert(alert(1) && alert(2)); //1
+      alert(null || (2 && 3) || 4); //3
+
+      if (age <= 90 && age >= 14) {
+        alert("Age is betweer 14 and 90 inclusively");
+      }
+
+      if (age >= 90 || age <= 14) {
+        alert("Age not is between 14 and 90");
+      }
+
+      if (!(age <= 90 && age >= 14)) {
+        alert("Age not is between 14 and 90");
+      }
+
+      let visitor = prompt("Enter your role", "");
+      if (visitor === "Admin") {
+        let password = prompt("Enter your password", "");
+        if (password === "TheMaster") {
+          alert("welcome");
+        } else if (password === "" || password === null) {
+          alert("cancelled");
+        } else {
+          alert("Wrong password");
+        }
+      } else if (visitor === "" || visitor === null) {
+        alert("cancelled");
+      } else {
+        alert("You are not Admin");
+      }
+    </script>
+  </body>
+</html>

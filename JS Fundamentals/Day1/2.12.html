@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops while and for</title>
+  </head>
+  <body>
+    <script>
+      //TASK1
+      let i = 3;
+      while (i) {
+        alert(i--);
+      } //prints 1 at last
+
+      //TASK2
+      let j = 0;
+      while (++j < 5) alert(j); //prints 1,2,3,4
+
+      let k = 0;
+      while (k++ < 5) alert(k); //prints 1,2,3,4,5
+
+      //TASK3
+      for (let i = 0; i < 5; i++) alert(i); //prints 0,1,2,3,4
+
+      for (let i = 0; i < 5; ++i) alert(i); //prints 0,1,2,3,4
+
+      //TASK4
+      for (let a = 2; a <= 10; a++) {
+        if (a % 2 == 0) {
+          alert(a);
+        }
+      } //prints 2,4,6,8,10
+
+      //TASK5
+      let b = 0;
+      while (b < 3) {
+        alert(`number ${i}`);
+        i++;
+      }
+
+      //TASK6
+      let num;
+      do {
+        num = prompt("Enter a number greater than 100?", 0);
+      } while (num <= 100 && num);
+    </script>
+  </body>
+</html>
