@@ -1,4 +1,84 @@
 <script>
+  let aray = ["I", "want", "a", "spaceship"];
+
+  aray.splice(1, 2);
+
+  alert(aray);
+</script>
+
+<script>
+  let aray1 = ["I", "study", "JavaScript"];
+
+  array1.splice(2, 0, "complex", "language");
+
+  alert(array1);
+</script>
+
+<script>
+  let aray2 = [1, 2, 5];
+
+  aray2.splice(-1, 0, 3, 4);
+
+  alert(aray2);
+</script>
+
+<script>
+  let fruits = ["Apple", "Orange", "Apple"];
+
+  alert(fruits.indexOf("Apple"));
+  alert(fruits.lastIndexOf("Apple"));
+</script>
+
+<script>
+  let students = [
+    { id: 1, name: "Yogesh" },
+    { id: 2, name: "Julee" },
+    { id: 3, name: "Chandey" },
+  ];
+
+  let student = students.find((item) => item.id == 1);
+
+  alert(user.name);
+</script>
+
+<script>
+  let teachers = [
+    { id: 1, name: "Ram" },
+    { id: 2, name: "Shyam" },
+    { id: 3, name: "Mary" },
+    { id: 4, name: "John" },
+  ];
+
+  alert(teachers.findIndex((user) => user.name == "Ram"));
+</script>
+
+<script>
+  let users1 = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Pete" },
+    { id: 3, name: "Mary" },
+  ];
+
+  let someUsers = users1.filter((item) => item.id < 3);
+
+  alert(someUsers.length);
+</script>
+
+<script>
+  function compareNumeric(a, b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
+  }
+
+  let arr22 = [1, 2, 15];
+
+  arr22.sort(compareNumeric);
+
+  alert(arr22);
+</script>
+
+<script>
   function camelize(str) {
     return str
       .split("-")
