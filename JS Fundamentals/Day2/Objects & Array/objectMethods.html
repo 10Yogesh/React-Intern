@@ -1,0 +1,95 @@
+<script>
+  //TASK1
+  function makeUser() {
+    return {
+      name: "John",
+      ref: this,
+    };
+  }
+  let user = makeUser();
+  alert(user.ref.name); //returns undefined
+
+  //TASK2
+  let calculator = {
+    read() {
+      this.a = +prompt("a?", 0);
+      this.b = +prompt("b?", 0);
+    },
+
+    sum() {
+      return this.a + this.b;
+    },
+
+    mul() {
+      return this.a * this.b;
+    },
+  };
+
+  calculator.read();
+  alert(calculator.sum());
+  alert(calculator.mul());
+
+  //TASK3
+  let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      return this;
+    },
+    down() {
+      this.step--;
+      return this;
+    },
+    showStep() {
+      alert(this.step);
+      return this;
+    },
+  };
+
+  ladder.up().up().down().showStep().down().showStep();
+</script>
+
+<!-- Examples -->
+
+<script>
+  const myObject = { a: 1, b: 2, c: 3 };
+  const keysArray = Object.keys(myObject);
+  alert(keysArray);
+</script>
+
+<script>
+  const myObject1 = { a: 1, b: 2, c: 3 };
+  const valuesArray = Object.values(myObject1);
+  alert(valuesArray);
+</script>
+
+<script>
+  const myObject2 = { a: 1, b: 2, c: 3 };
+  const entriesArray = Object.entries(myObject2);
+  alert(entriesArray);
+</script>
+
+<script>
+  const target = { a: 1, b: 2 };
+  const source = { b: 3, c: 4 };
+  const result = Object.assign(target, source);
+  alert(result);
+</script>
+
+<script>
+  const myObject3 = { a: 1, b: 2 };
+  const hasProperty = myObject.hasOwnProperty("b");
+  alert(hasProperty);
+</script>
+
+<script>
+  const myObject4 = { a: 1, b: 2 };
+  Object.freeze(myObject);
+  myObject.c = 3;
+</script>
+
+<script>
+  const myObject = { a: 1, b: 2 };
+  Object.seal(myObject);
+  delete myObject.a;
+</script>

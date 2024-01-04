@@ -229,3 +229,61 @@
     }, {});
   }
 </script>
+
+<script>
+  const originalArray = [1, 2, 3, 4, 5];
+
+  const doubledArray = originalArray.map((element) => element * 2);
+
+  alert(doubledArray);
+</script>
+
+<script>
+  const words = ["apple", "banana", "orange"];
+
+  const uppercasedWords = words.map((word) => word.toUpperCase());
+
+  alert(uppercasedWords);
+</script>
+
+<script>
+  const allfruits = ["apple", "banana", "kiwi", "strawberry"];
+
+  const wordLengths = allfruits.map((fruit) => fruit.length);
+
+  alert(wordLengths);
+</script>
+
+<script>
+  const people = [
+    { name: "John", age: 30 },
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 35 },
+  ];
+
+  const ages = people.map((person) => person.age);
+
+  alert(ages);
+</script>
+
+<script>
+  const numbers = [4, 9, 16, 25];
+
+  const squareRoots = numbers.map((number) => Math.sqrt(number));
+
+  alert(squareRoots);
+</script>
+
+<script>
+  const peoples = [
+    { name: "John", age: 30 },
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 35 },
+  ];
+
+  const firstPersonOver30 = peoples.find((person) => person.age > 30);
+
+  alert(firstPersonOver30.name);
+</script>
+
+
