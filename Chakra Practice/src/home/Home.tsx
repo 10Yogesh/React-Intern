@@ -26,6 +26,7 @@ const Home = () => {
       <a href="/media">Media and Icons</a>
       <a href="/navigation">Navigation</a>
       <a href="/pininput">Pin Input</a>
+      <a href="/overlay">Overlay</a>
     </Center>
   );
 };

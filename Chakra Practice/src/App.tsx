@@ -6,15 +6,16 @@ import CenterExample from "./component/CenterExample";
 import ContainerExample from "./component/ContainerExample";
 import FlexExample from "./component/FlexExample";
 import GridExample from "./component/GridExample";
-import ButtonExample from "./forms/ButtonExample";
-import CheckboxExample from "./forms/CheckboxExample";
-import FormControlExample from "./forms/FormControl";
-import IconButtonExample from "./forms/IconButtonExample";
-import PinInputExample from "./forms/PinInputExample";
-import DataDisplayALlExample from "./forms/DataDisplayALlExample";
-import FeedbackExample from "./forms/FeedbackExample";
-import NavigationExample from "./forms/NavigationExample";
-import MediaExamples from "./forms/MediaExamples";
+import ButtonExample from "./component/ButtonExample";
+import CheckboxExample from "./component/CheckboxExample";
+import FormControlExample from "./component/FormControl";
+import IconButtonExample from "./component/IconButtonExample";
+import PinInputExample from "./component/PinInputExample";
+import DataDisplayALlExample from "./component/DataDisplayALlExample";
+import FeedbackExample from "./component/FeedbackExample";
+import NavigationExample from "./component/NavigationExample";
+import MediaExamples from "./component/MediaExamples";
+import OverlayExample from "./component/OverlayExample";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/feedback" element={<FeedbackExample />} />
         <Route path="/navigation" element={<NavigationExample />} />
         <Route path="/media" element={<MediaExamples />} />
+        <Route path="/overlay" element={<OverlayExample />} />
       </Routes>
     </BrowserRouter>
   );
